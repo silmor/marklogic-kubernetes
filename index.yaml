@@ -30,6 +30,31 @@ entries:
       category: Database
     apiVersion: v2
     appVersion: 11.1.0
+    created: "2024-05-08T17:07:21.810976606Z"
+    dependencies:
+    - condition: haproxy.enabled
+      name: haproxy
+      repository: file://./charts/haproxy
+      version: 1.18.0
+    description: MarkLogic Server is a multi-model database that has both NoSQL and
+      trusted enterprise data management capabilities.
+    digest: f22970016c01cc0b73b525eb424771e9e11f90cf336770ac6bc7ab8fcb9d11e6
+    keywords:
+    - marklogic
+    - database
+    - nosql
+    name: marklogic
+    sources:
+    - https://github.com/marklogic/marklogic-kubernetes
+    - https://www.marklogic.com/
+    type: application
+    urls:
+    - https://github.com/silmor/marklogic-kubernetes/releases/download/marklogic-1.1.1-fix-silmor/marklogic-1.1.1-fix-silmor.tgz
+    version: 1.1.1-fix-silmor
+  - annotations:
+      category: Database
+    apiVersion: v2
+    appVersion: 11.1.0
     created: "2024-02-27T23:52:49.863693868Z"
     dependencies:
     - condition: haproxy.enabled
@@ -241,4 +266,4 @@ entries:
     urls:
     - https://github.com/marklogic/marklogic-kubernetes/releases/download/v1.0.0-ea.1/marklogic-1.0.0-ea1.tgz
     version: 1.0.0-ea1
-generated: "2024-03-27T17:46:25.598050351Z"
+generated: "2024-05-08T17:07:21.811027911Z"
