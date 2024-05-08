@@ -75,7 +75,7 @@ data:
     {{ $portType := upper (printf "%s" $v.type) }}
 
     {{- if eq $portType "TCP"  -}}
-      listen odbc
+      listen marklogic-{{$portNumber}}
         bind :{{ $portNumber }}
         mode tcp
         balance leastconn
